@@ -1,0 +1,33 @@
+- var title = "title";
+- var description = "description"
+- var keywords = "keywords"
+- var image = "${require(`img/fb.png`)}"
+- var min = devMode ? "" : ".min";
+doctype html
+html
+  head
+    title=title
+    meta(charset='UTF-8')
+    meta(http-equiv="X-UA-Compatible" content="ie=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no")
+    meta(name="description" content=description)
+    meta(name="keywords" content=keywords)
+    meta(property="og:title" content=title)
+    meta(property="og:description" content=description)
+    meta(property="og:image" content=image)
+    link(rel="image_src" type="image/jpeg" href=image)
+    link(rel="shortcut icon" type="image/ico" href="favicon.ico")
+    if https && !DEV_MODE
+      script.
+        if (location.protocol !== 'https:') location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
+    if DEV_MODE
+      script.
+        console.log('#{APP_ENV}');
+    if weinreScript
+      script(src=weinreScript)
+  body(class=DEV_MODE ? 'development': '')
+    #app
+    script(src='//cdnjs.cloudflare.com/ajax/libs/device.js/0.2.7/device.min.js' defer)
+    script(src="//cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js" defer)
+    script(src="//cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/plugins/ScrollToPlugin.min.js" defer)
+    include ga.html

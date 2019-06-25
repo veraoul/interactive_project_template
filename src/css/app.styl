@@ -1,0 +1,104 @@
+html
+  -webkit-tap-highlight-color rgba(0, 0, 0, 0)
+  font-size 100%
+  +m()
+    font-size 75%
+body
+  > img
+    position absolute
+    left 0
+    bottom 0
+    pointer-events none
+  &.hidden
+    overflow hidden
+  &.no-scroll
+    left 0
+    -webkit-overflow-scrolling touch
+    position fixed
+    top 0
+    width 100%
+
+body, input
+  font-family Helvetica, Verdana, Arial, "微軟正黑體", "Microsoft JhengHei", "儷黑 Pro", "LiHei Pro", sans-serif
+
+html, body, #app
+  width 100%
+  // height 100%
+
+a
+  text-decoration none
+
+img
+  vertical-align top
+
+iframe[name="google_conversion_frame"]
+  display none
+
+.fade-enter-active, .fade-leave-active
+  transition all .5s
+  
+.fade-enter, .fade-leave-to
+  opacity 0
+
+.sixteen-nine
+  position relative
+  padding-bottom 56.25%
+  &__media
+    position absolute
+    display block
+    width 100%
+    height 100%
+
+.abs-center
+  position absolute
+  top 0
+  right 0
+  bottom 0
+  left 0
+  margin auto
+
+.flex-center
+  display flex
+  justify-content center
+  align-items center
+
+// https://codepen.io/bad_printer/pen/QVWjKx
+.flex-align
+  display flex
+  margin auto
+  > .content
+    margin auto
+
+.inline-align
+  text-align center
+  &:before
+    content ''
+    width 0
+    height 100%
+    display inline-block
+    vertical-align middle
+  > .content
+    display inline-block
+    vertical-align middle
+
+.ripple-container
+  position absolute
+  overflow hidden
+  z-index 99
+  left 0
+  top 0
+  pointer-events none
+  &__circle
+    position absolute
+    border-radius 100%
+    pointer-events none
+    animation ripple 1s forwards cubic-bezier(0, 0, 0.2, 1)
+    // background-color rgba(255,255,255,0.4)
+
+.text-justify
+  text-align justify
+  text-justify inter-ideograph
+  &:after
+    content ''
+    display inline-block
+    width 100%

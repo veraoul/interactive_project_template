@@ -1,0 +1,83 @@
+@font-face {
+	font-family: "icons";
+	src: url('~/asset/font/icons.eot');
+	src: url('~/asset/font/icons.eot?#iefix') format('eot'),
+		url('~/asset/font/icons.woff2') format('woff2'),
+		url('~/asset/font/icons.woff') format('woff'),
+		url('~/asset/font/icons.ttf') format('truetype'),
+		url('~/asset/font/icons.svg#icons') format('svg');
+}
+
+[class^="icon-"]:before, 
+[class*=" icon-"]:before {
+	font-family: "icons";
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	/* speak: none; only necessary if not using the private unicode range (firstGlyph option) */
+	text-decoration: none;
+	text-transform: none;
+}
+
+
+.icon-alert:before {
+	content: "\E001";
+}
+
+.icon-check:before {
+	content: "\E002";
+}
+
+.icon-cross:before {
+	content: "\E003";
+}
+
+.icon-darr:before {
+	content: "\E004";
+}
+
+.icon-date:before {
+	content: "\E005";
+}
+
+.icon-fb:before {
+	content: "\E006";
+}
+
+.icon-filter:before {
+	content: "\E007";
+}
+
+.icon-larr:before {
+	content: "\E008";
+}
+
+.icon-line:before {
+	content: "\E009";
+}
+
+.icon-plan-result:before {
+	content: "\E00A";
+}
+
+.icon-rarr:before {
+	content: "\E00B";
+}
+
+.icon-share:before {
+	content: "\E00C";
+}
+
+.icon-star:before {
+	content: "\E00D";
+}
+
+.icon-uarr:before {
+	content: "\E00E";
+}
+
+.icon-warn:before {
+	content: "\E00F";
+}

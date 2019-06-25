@@ -1,0 +1,44 @@
+@import '~css/markvann.styl'
+
+.btn-larr-root
+  width 100%
+  height 50px
+  text-align center
+  display inline-block
+  background #0064a3
+  +tablet()
+    height 100px
+  +mobile()
+    height 50px
+  &:before
+    content ""
+    width 0
+    height 100%
+  &:before, span
+    display inline-block
+    vertical-align middle
+    pointer-events none
+  span
+    color #fff
+    font-size 16px
+    pointer-events none
+    +tablet()
+      font-size 32px
+    +mobile()
+      font-size 16px
+    &+span
+      margin-left 8px
+      +tablet()
+        margin-left 20px
+      +mobile()
+        margin-left 10px
+    &.icon-larr
+      font-size 12px
+      +tablet()
+        font-size 24px
+      +mobile()
+        font-size 12px
+      html.desktop &
+        transition transform 0.2s ease-out
+  html.desktop &:hover span.icon-larr
+    transform translateX(-5px)

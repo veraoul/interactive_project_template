@@ -1,0 +1,27 @@
+{
+  "presets": [
+    ["env", {
+      "modules": false,
+      "useBuiltIn": true,
+      "debug": false,
+      "targets": {
+        "chrome": 60,
+        "browsers": [
+          "> 5%",
+          "last 2 versions",
+          "ie >= 10",
+          "ios 8"
+        ]
+      }
+    }],
+    "stage-0",
+    "flow"
+  ],
+  "plugins": [
+    ["transform-runtime",{
+      "helpers": false,
+      "polyfill": false,
+      "regenerator": false
+    }]
+  ]
+}
