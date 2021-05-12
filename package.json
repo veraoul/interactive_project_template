@@ -112,7 +112,7 @@
     "simple-vue-validator": "^0.15.1",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.1",
-    "swiper": "^4.3.3",
+    "swiper": "^6.5.1",
     "url-loader": "^1.0.1",
     "vinyl-buffer": "^1.0.0",
     "vue": "^2.5.16",
