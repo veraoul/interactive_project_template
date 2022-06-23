@@ -90,7 +90,7 @@
     "imagemin-pngquant": "^5.1.0",
     "imagemin-svgo": "^6.0.0",
     "jest": "^23.4.1",
-    "jsdom": "^11.11.0",
+    "jsdom": "^16.5.0",
     "lint-staged": "^7.2.0",
     "merge-stream": "^1.0.1",
     "mini-css-extract-plugin": "^0.4.1",
